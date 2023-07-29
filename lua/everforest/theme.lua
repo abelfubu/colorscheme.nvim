@@ -192,6 +192,44 @@ theme.set_highlights = function()
 	hl(0, "NvimTreeRootFolder", { fg = c.blue, bg = "NONE" })
 	hl(0, "NvimTreeWindowPicker", { fg = c.green, bg = c.dark, bold = true, italic = true })
 
+	-- NeoTree
+	-- hl(0, "NeoTreeBufferNumber", { fg = "NONE", bg = "NONE" }) -- The buffer number shown in the buffers source.
+	-- hl(0, "NeoTreeCursorLine", { fg = "NONE", bg = "NONE" }) --        |hl-CursorLine| override in Neo-tree window.
+	-- hl(0, "NeoTreeDimText", { fg = "NONE", bg = "NONE" }) -- Greyed out text used in various places.
+	hl(0, "NeoTreeDirectoryIcon", { fg = c.cursor_fg, bg = "NONE" }) -- Directory icon.
+	-- hl(0, "NeoTreeDirectoryName", { fg = "NONE", bg = "NONE" }) -- Directory name.
+	-- hl(0, "NeoTreeDotfile", { fg = "NONE", bg = "NONE" }) -- Used for icons and names when dotfiles are filtered.
+	-- hl(0, "NeoTreeFileIcon", { fg = "NONE", bg = "NONE" }) -- File icon, when not overridden by devicons.
+	-- hl(0, "NeoTreeFileName", { fg = "NONE", bg = "NONE" }) -- File name, when not overwritten by another status.
+	-- hl(0, "NeoTreeFileNameOpened", { fg = "NONE", bg = "NONE" }) -- File name when the file is open. Not used yet.
+	-- hl(0, "NeoTreeFilterTerm", { fg = "NONE", bg = "NONE" }) -- The filter term, as displayed in the root node.
+	-- hl(0, "NeoTreeFloatBorder", { fg = "NONE", bg = "NONE" }) -- The border for pop-up windows.
+	-- hl(0, "NeoTreeFloatTitle", { fg = "NONE", bg = "NONE" }) -- Used for the title text of pop-ups when the border-style
+	-- hl(0, "NeoTreeTitleBar", { fg = "NONE", bg = "NONE" }) -- Used for the title bar of pop-ups, when the border-style
+	-- hl(0, "NeoTreeGitAdded", { fg = "NONE", bg = "NONE" }) -- File name when the git status is added.
+	-- hl(0, "NeoTreeGitConflict", { fg = "NONE", bg = "NONE" }) -- File name when the git status is conflict.
+	-- hl(0, "NeoTreeGitDeleted", { fg = "NONE", bg = "NONE" }) -- File name when the git status is deleted.
+	-- hl(0, "NeoTreeGitIgnored", { fg = "NONE", bg = "NONE" }) -- File name when the git status is ignored.
+	-- hl(0, "NeoTreeGitModified", { fg = "NONE", bg = "NONE" }) -- File name when the git status is modified.
+	-- hl(0, "NeoTreeGitUnstaged", { fg = "NONE", bg = "NONE" }) -- Used for git unstaged symbol.
+	-- hl(0, "NeoTreeGitUntracked", { fg = "NONE", bg = "NONE" }) -- File name when the git status is untracked.
+	-- hl(0, "NeoTreeGitStaged", { fg = "NONE", bg = "NONE" }) -- Used for git staged symbol.
+	-- hl(0, "NeoTreeHiddenByName", { fg = "NONE", bg = "NONE" }) -- Used for icons and names when `hide_by_name` is used.
+	-- hl(0, "NeoTreeIndentMarker", { fg = "NONE", bg = "NONE" }) -- The style of indentation markers (guides). By default,
+	-- hl(0, "NeoTreeExpander", { fg = "NONE", bg = "NONE" }) -- Used for collapsed/expanded icons.
+	-- hl(0, "NeoTreeNormal", { fg = "NONE", bg = "NONE" }) --   |hl-Normal| override in Neo-tree window.
+	-- hl(0, "NeoTreeNormalNC", { fg = "NONE", bg = "NONE" }) -- |hl-NormalNC| override in Neo-tree window.
+	-- hl(0, "NeoTreeSignColumn", { fg = "NONE", bg = "NONE" }) --   |hl-SignColumn| override in Neo-tree window.
+	-- hl(0, "NeoTreeStatusLine", { fg = "NONE", bg = "NONE" }) -- |hl-StatusLine| override in Neo-tree window.
+	-- hl(0, "NeoTreeStatusLineNC", { fg = "NONE", bg = "NONE" }) --   |hl-StatusLineNC| override in Neo-tree window.
+	-- hl(0, "NeoTreeVertSplit", { fg = "NONE", bg = "NONE" }) -- |hl-VertSplit| override in Neo-tree window.
+	-- hl(0, "NeoTreeWinSeparator", { fg = "NONE", bg = "NONE" }) --  |hl-WinSeparator| override in Neo-tree window.
+	-- hl(0, "NeoTreeEndOfBuffer", { fg = "NONE", bg = "NONE" }) --   |hl-EndOfBuffer| override in Neo-tree window.
+	-- hl(0, "NeoTreeRootName", { fg = "NONE", bg = "NONE" }) -- The name of the root node.
+	-- hl(0, "NeoTreeSymbolicLinkTarget", { fg = "NONE", bg = "NONE" }) --Symbolic link target.
+	-- hl(0, "NeoTreeTitleBar", { fg = "NONE", bg = "NONE" }) -- Used for the title bar of pop-ups, when the border-style
+	-- hl(0, "NeoTreeWindowsHidden", { fg = "NONE", bg = "NONE" }) -- Used for icons and names that are hidden on Windows.
+
 	-- IndentBlankline
 	hl(0, "IndentBlanklineChar", { link = "IndentChar" })
 	hl(0, "IndentBlanklineSpaceChar", { link = "IndentChar" })
