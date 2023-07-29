@@ -196,6 +196,9 @@ theme.set_highlights = function()
 
 	-- DevIcons
 	hl(0, "DevIconLua", { fg = c.purple3, bg = "NONE" })
+
+	hl(0, "NavicText", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIcons", { fg = c.blue, bg = "NONE" })
 end
 
 return theme
