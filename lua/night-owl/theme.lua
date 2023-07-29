@@ -5,7 +5,7 @@ local theme = {}
 
 theme.set_highlights = function()
 	-- highlights
-	hl(0, "Normal", { fg = c.green, bg = c.bg })
+	hl(0, "Normal", { fg = c.fg, bg = c.bg })
 	hl(0, "SignColumn", { fg = "NONE", bg = c.bg })
 	hl(0, "Pmenu", { fg = "NONE", bg = c.dark })
 	hl(0, "PmenuSel", { fg = "NONE", bg = c.quickfix_line })
@@ -48,13 +48,13 @@ theme.set_highlights = function()
 	hl(0, "Function", { fg = c.yellow, bg = "NONE", italic = true })
 	hl(0, "Operator", { fg = c.yellow, bg = "NONE" })
 	hl(0, "Type", { fg = c.orange2, bg = "NONE" })
-	hl(0, "Keyword", { fg = c.green, bg = "NONE" })
+	hl(0, "Keyword", { fg = c.blue, bg = "NONE" })
 	hl(0, "Statement", { fg = c.blue, bg = "NONE", italic = true })
 	hl(0, "Conditional", { fg = c.blue, bg = "NONE" })
 	hl(0, "Include", { fg = c.green, bg = "NONE", italic = true })
 	hl(0, "PreProc", { fg = c.magenta4, bg = "NONE" })
 	hl(0, "Special", { fg = c.orange2, bg = "NONE" })
-	hl(0, "Tag", { fg = c.fg, bg = "NONE" })
+	hl(0, "Tag", { fg = c.blue, bg = "NONE" })
 	hl(0, "Delimiter", { fg = c.fg, bg = "NONE" })
 	hl(0, "Error", { fg = c.error_red, bg = "NONE" })
 	hl(0, "IndentChar", { fg = c.indent_guide, bg = "NONE" })
@@ -174,10 +174,6 @@ theme.set_highlights = function()
 	hl(0, "NvimTreeRootFolder", { fg = c.blue, bg = "NONE" })
 	hl(0, "NvimTreeWindowPicker", { fg = c.green, bg = c.dark, bold = true, italic = true })
 
-	-- Buffer
-
-	-- StatusLine
-
 	-- IndentBlankline
 	hl(0, "IndentBlanklineChar", { link = "IndentChar" })
 	hl(0, "IndentBlanklineSpaceChar", { link = "IndentChar" })
@@ -185,47 +181,43 @@ theme.set_highlights = function()
 	hl(0, "IndentBlanklineContextChar", { link = "IndentContextChar" })
 	hl(0, "IndentBlanklineContextStart", { fg = "NONE", bg = "NONE", sp = c.indent_guide, underline = true })
 
-	-- Dashboard
-
-	-- Cmp
-
 	-- Illuminate
 	hl(0, "IlluminatedWordText", { fg = "NONE", bg = c.word_highlight })
 	hl(0, "IlluminatedWordRead", { fg = "NONE", bg = c.word_highlight })
 	hl(0, "IlluminatedWordWrite", { fg = "NONE", bg = c.word_highlight })
+
 	-- DevIcons
 	hl(0, "DevIconLua", { fg = c.purple3, bg = "NONE" })
 
 	--Navic
-
 	hl(0, "NavicIconsFile", { bg = "NONE", fg = c.blue })
 	hl(0, "NavicIconsModule", { bg = "NONE", fg = c.blue })
 	hl(0, "NavicIconsNamespace", { bg = "NONE", fg = c.blue })
 	hl(0, "NavicIconsPackage", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsClass", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsMethod", { bg = "NONE", fg = c.blue })
+	hl(0, "NavicIconsClass", { bg = "NONE", fg = c.yellow })
+	hl(0, "NavicIconsMethod", { bg = "NONE", fg = c.yellow })
 	hl(0, "NavicIconsProperty", { bg = "NONE", fg = c.blue })
 	hl(0, "NavicIconsField", { bg = "NONE", fg = c.blue })
 	hl(0, "NavicIconsConstructor", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsEnum", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsInterface", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsFunction", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsVariable", { bg = "NONE", fg = c.blue })
+	hl(0, "NavicIconsEnum", { bg = "NONE", fg = c.green })
+	hl(0, "NavicIconsInterface", { bg = "NONE", fg = c.green })
+	hl(0, "NavicIconsFunction", { bg = "NONE", fg = c.yellow })
+	hl(0, "NavicIconsVariable", { bg = "NONE", fg = c.green })
 	hl(0, "NavicIconsConstant", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsString", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsNumber", { bg = "NONE", fg = c.blue })
+	hl(0, "NavicIconsString", { bg = "NONE", fg = c.red })
+	hl(0, "NavicIconsNumber", { bg = "NONE", fg = c.cyan })
 	hl(0, "NavicIconsBoolean", { bg = "NONE", fg = c.blue })
 	hl(0, "NavicIconsArray", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsObject", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsKey", { bg = "NONE", fg = c.blue })
+	hl(0, "NavicIconsObject", { bg = "NONE", fg = c.yellow })
+	hl(0, "NavicIconsKey", { bg = "NONE", fg = c.fg })
 	hl(0, "NavicIconsNull", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsEnumMember", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsStruct", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsEvent", { bg = "NONE", fg = c.blue })
+	hl(0, "NavicIconsEnumMember", { bg = "NONE", fg = c.green })
+	hl(0, "NavicIconsStruct", { bg = "NONE", fg = c.green })
+	hl(0, "NavicIconsEvent", { bg = "NONE", fg = c.green })
 	hl(0, "NavicIconsOperator", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsTypeParameter", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicText", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicSeparator", { bg = "NONE", fg = c.blue })
+	hl(0, "NavicIconsTypeParameter", { bg = "NONE", fg = c.green })
+	hl(0, "NavicText", { bg = "NONE", fg = c.red })
+	hl(0, "NavicSeparator", { bg = "NONE", fg = c.yellow })
 end
 
 return theme
