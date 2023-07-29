@@ -1,17 +1,8 @@
 <div align="center">
-    <h3>🦉 night-owl.nvim 🌌</h3>
+    <h3>everforest </h3>
     <a href="#contributors">
-        <img src="https://img.shields.io/github/all-contributors/oxfist/night-owl.nvim?color=ee8449&style=flat-square" alt="All Contributors"></img>
     </a>
 </div>
-
-<div align="center">
-    <img src="img/dark_logo.png" height="300" alt="Logo" />
-</div>
-
-The _best_ implementation of
-[Sarah Drasner's Night Owl VSCode theme](https://github.com/sdras/night-owl-vscode-theme)
-for Neovim with Treesitter support.
 
 ![Syntax highlight demo image](./img/calculator.png)
 
@@ -20,7 +11,7 @@ for Neovim with Treesitter support.
 ### packer.nvim
 
 ```lua
-use("oxfist/night-owl.nvim")
+use("abelfubu/everforest")
 ```
 
 ### lazy.nvim
@@ -40,7 +31,7 @@ require("lazy").setup({
 ### vim-plug
 
 ```vim
-Plug 'oxfist/night-owl.nvim'
+Plug 'abelfubu/everforest'
 ```
 
 ## 🚀 Start Using With A Single Line
@@ -52,7 +43,7 @@ Add the following line to your Lua configuration files, e.g.
 `~/.config/nvim/init.lua` (your actual path might be different):
 
 ```lua
-vim.cmd.colorscheme("night-owl")
+vim.cmd.colorscheme("everforest")
 ```
 
 To enable `night-owl` for Lualine, simply set the theme like this in your
@@ -63,7 +54,7 @@ settings 👇:
 require('lualine').setup {
   options = {
     -- ... other configs
-    theme = 'night-owl'
+    theme = 'everforest'
     -- ... other configs
   }
 }
