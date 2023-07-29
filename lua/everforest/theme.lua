@@ -17,9 +17,9 @@ theme.set_highlights = function()
 	hl(0, "FloatBorder", { fg = c.cyan, bg = c.bg })
 	hl(0, "FloatTitle", { fg = c.purple, bg = c.bg, bold = true })
 	hl(0, "VertSplit", { fg = c.gray, bg = "NONE" })
-	hl(0, "CursorLine", { fg = "NONE", bg = c.dark2 })
+	hl(0, "CursorLine", { fg = "NONE", bg = "NONE" })
 	hl(0, "CursorColumn", { fg = "NONE", bg = c.cursor_fg })
-	hl(0, "ColorColumn", { fg = "NONE", bg = c.dark2 })
+	hl(0, "ColorColumn", { fg = "NONE", bg = "NONE" })
 	hl(0, "NormalFloat", { fg = "NONE", bg = c.bg, sp = "NONE", blend = 0 })
 	hl(0, "Visual", { link = "VisualActive" })
 	hl(0, "VisualActive", { fg = "NONE", bg = c.visual })
@@ -210,10 +210,11 @@ theme.set_highlights = function()
 	-- hl(0, "NeoTreeGitConflict", { fg = "NONE", bg = "NONE" }) -- File name when the git status is conflict.
 	-- hl(0, "NeoTreeGitDeleted", { fg = "NONE", bg = "NONE" }) -- File name when the git status is deleted.
 	-- hl(0, "NeoTreeGitIgnored", { fg = "NONE", bg = "NONE" }) -- File name when the git status is ignored.
-	-- hl(0, "NeoTreeGitModified", { fg = "NONE", bg = "NONE" }) -- File name when the git status is modified.
+	-- hl(0, "NeoTreeGitModified", { fg = c.orange, bg = "NONE" }) -- File name when the git status is modified.
+	hl(0, "NeoTreeGitUnstaged", { fg = c.orange, bg = "NONE" }) -- File name when the git status is modified.
 	-- hl(0, "NeoTreeGitUnstaged", { fg = "NONE", bg = "NONE" }) -- Used for git unstaged symbol.
 	-- hl(0, "NeoTreeGitUntracked", { fg = "NONE", bg = "NONE" }) -- File name when the git status is untracked.
-	-- hl(0, "NeoTreeGitStaged", { fg = "NONE", bg = "NONE" }) -- Used for git staged symbol.
+	hl(0, "NeoTreeGitStaged", { fg = c.green, bg = "NONE" }) -- Used for git staged symbol.
 	-- hl(0, "NeoTreeHiddenByName", { fg = "NONE", bg = "NONE" }) -- Used for icons and names when `hide_by_name` is used.
 	-- hl(0, "NeoTreeIndentMarker", { fg = "NONE", bg = "NONE" }) -- The style of indentation markers (guides). By default,
 	-- hl(0, "NeoTreeExpander", { fg = "NONE", bg = "NONE" }) -- Used for collapsed/expanded icons.
