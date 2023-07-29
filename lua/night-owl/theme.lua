@@ -157,6 +157,18 @@ theme.set_highlights = function()
 	hl(0, "TelescopeSelection", { fg = "NONE", bg = c.visual })
 	hl(0, "TelescopeMatching", { fg = c.green, bg = "NONE", bold = true })
 	hl(0, "TelescopeBorder", { fg = c.ui_border, bg = "NONE" })
+	hl(0, "TelescopeMatching", { fg = c.green, bg = "NONE" })
+	hl(0, "TelescopePromptBorder", { fg = c.bg, bg = c.bg })
+	hl(0, "TelescopePromptNormal", { fg = c.fg, bg = c.bg })
+
+	-- call everforest#highlight('TelescopePromptPrefix', s:palette.orange, s:palette.bg5)
+	-- call everforest#highlight('TelescopeSelection', s:palette.blue, s:palette.none)
+	-- call everforest#highlight('TelescopePreviewTitle', s:palette.bg0, s:palette.green)
+	-- call everforest#highlight('TelescopePromptTitle', s:palette.bg0, s:palette.red)
+	-- call everforest#highlight('TelescopeResultsTitle', s:palette.bg0, s:palette.blue)
+	-- call everforest#highlight('TelescopeDiffAdd', s:palette.green, s:palette.none)
+	-- call everforest#highlight('TelescopeDiffChange', s:palette.yellow, s:palette.none)
+	-- call everforest#highlight('TelescopeDiffDelete', s:palette.red, s:palette.none)
 
 	-- NvimTree
 	hl(0, "NvimTreeIndentMarker", { fg = c.nvim_tree_indent_marker, bg = "NONE" })
