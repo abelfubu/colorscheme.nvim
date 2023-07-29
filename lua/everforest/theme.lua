@@ -196,7 +196,7 @@ theme.set_highlights = function()
 	-- hl(0, "NeoTreeBufferNumber", { fg = "NONE", bg = "NONE" }) -- The buffer number shown in the buffers source.
 	-- hl(0, "NeoTreeCursorLine", { fg = "NONE", bg = "NONE" }) --        |hl-CursorLine| override in Neo-tree window.
 	-- hl(0, "NeoTreeDimText", { fg = "NONE", bg = "NONE" }) -- Greyed out text used in various places.
-	hl(0, "NeoTreeDirectoryIcon", { fg = c.cursor_fg, bg = "NONE" }) -- Directory icon.
+	hl(0, "NeoTreeDirectoryIcon", { fg = c.line_number_active_fg, bg = "NONE" }) -- Directory icon.
 	-- hl(0, "NeoTreeDirectoryName", { fg = "NONE", bg = "NONE" }) -- Directory name.
 	-- hl(0, "NeoTreeDotfile", { fg = "NONE", bg = "NONE" }) -- Used for icons and names when dotfiles are filtered.
 	-- hl(0, "NeoTreeFileIcon", { fg = "NONE", bg = "NONE" }) -- File icon, when not overridden by devicons.
