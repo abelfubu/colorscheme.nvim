@@ -132,6 +132,13 @@ theme.set_highlights = function()
 	hl(0, "@function.builtin.lua", { fg = c.blue, bg = "NONE", italic = true })
 
 	-- Whichkey
+	hl(0, "WhichKey", { fg = c.fg, bg = "NONE" })
+	hl(0, "WhichKeyGroup", { fg = c.blue, bg = "NONE" })
+	hl(0, "WhichKeySeparator", { fg = c.green, bg = "NONE" })
+	hl(0, "WhichKeyDesc", { fg = c.yellow, bg = "NONE" })
+	hl(0, "WhichKeyFloat", { fg = c.cyan, bg = "NONE" })
+	hl(0, "WhichKeyBorder", { fg = c.bg, bg = "NONE" })
+	hl(0, "WhichKeyValue", { fg = c.green, bg = "NONE" })
 
 	-- Git
 	hl(0, "GitSignsAdd", { fg = c.sign_add, bg = "NONE" })
