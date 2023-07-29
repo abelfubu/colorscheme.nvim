@@ -44,4 +44,8 @@ export class Hello {
 
 let hello = "hello";
 
+if (true) {
+  console.log(hello);
+}
+
 console.log(hello);
