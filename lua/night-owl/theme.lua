@@ -66,7 +66,7 @@ theme.set_highlights = function()
 	-- Treesitter
 	hl(0, "@class.constructor", { fg = c.blue, bg = "NONE", italic = true })
 	hl(0, "@class.field.function", { link = "Function" })
-	hl(0, "@type", { fg = c.orange, bg = "NONE", italic = true })
+	hl(0, "@type", { fg = c.green, bg = "NONE", italic = true })
 	hl(0, "@type.class", { fg = c.orange, bg = "NONE", nocombine = true })
 	hl(0, "@type.inheritedClass", { fg = c.orange, bg = "NONE", nocombine = true })
 	hl(0, "@type.toml", { fg = c.orange, bg = "NONE", italic = true })
@@ -155,7 +155,7 @@ theme.set_highlights = function()
 	hl(0, "@lsp.mod.global.lua", { fg = c.green, bg = "NONE" })
 
 	-- Telescope
-	hl(0, "TelescopeMatching", { fg = c.green, bg = "NONE", bold = true })
+	hl(0, "TelescopeMatching", { fg = c.parameter, bg = "NONE", bold = true })
 	hl(0, "TelescopeBorder", { fg = c.bg, bg = "NONE" })
 	hl(0, "TelescopeSelection", { fg = c.blue, bg = "NONE" })
 	hl(0, "TelescopePromptBorder", { fg = c.bg, bg = "NONE" })

@@ -33,3 +33,11 @@ const Calculator: React.FC<CalculatorProps> = ({ initialValue = 0 }) => {
 };
 
 export default Calculator;
+
+export class Hello {
+  constructor() {}
+
+  someMethod(): string {
+    return "Hello world";
+  }
+}
