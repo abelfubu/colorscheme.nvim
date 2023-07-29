@@ -41,3 +41,5 @@ export class Hello {
     return "Hello world";
   }
 }
+
+let hello = "hello";
