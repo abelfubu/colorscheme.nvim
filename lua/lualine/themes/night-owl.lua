@@ -1,6 +1,6 @@
 local colors = {
 	dark = "#1e222a",
-	light = "#83c092",
+	light = "#d3c6aa",
 	magenta = "#e67e80",
 	green = "#a7c080",
 	yellow = "#dbbc7f",
@@ -37,7 +37,7 @@ local night_owl = {
 		c = { bg = "NONE", fg = colors.yellow },
 	},
 	inactive = {
-		a = { bg = colors.dark_blue, fg = colors.light_blue, gui = "bold" },
+		a = { bg = colors.cyan, fg = colors.dark, gui = "bold" },
 		b = { bg = "NONE", fg = colors.green },
 		c = { bg = "NONE", fg = colors.yellow },
 	},
