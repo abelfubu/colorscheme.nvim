@@ -1,4 +1,4 @@
-local c = require("everforest.palette")
+local c = require("-owl.palette")
 
 local hl = vim.api.nvim_set_hl
 local theme = {}
@@ -44,7 +44,7 @@ theme.set_highlights = function()
 	hl(0, "Constant", { fg = c.blue, bg = "NONE", italic = true })
 	hl(0, "Number", { fg = c.cyan5, bg = "NONE" })
 	hl(0, "Boolean", { fg = c.red, bg = "NONE", italic = true })
-	hl(0, "Identifier", { fg = c.fg, bg = "NONE" })
+	hl(0, "Identifier", { fg = c.green, bg = "NONE" })
 	hl(0, "Function", { fg = c.yellow, bg = "NONE", italic = true })
 	hl(0, "Operator", { fg = c.yellow, bg = "NONE" })
 	hl(0, "Type", { fg = c.orange2, bg = "NONE" })
