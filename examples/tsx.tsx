@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import React, { useState } from "react";
 
 interface CalculatorProps {
   initialValue?: number;
@@ -6,7 +6,7 @@ interface CalculatorProps {
 
 const Calculator: React.FC<CalculatorProps> = ({ initialValue = 0 }) => {
   const [result, setResult] = useState<number>(initialValue);
-  const [input, setInput] = useState<string>('');
+  const [input, setInput] = useState<string>("");
 
   const handleInput = (event: React.ChangeEvent<HTMLInputElement>) => {
     setInput(event.target.value);
