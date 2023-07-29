@@ -35,7 +35,11 @@ const Calculator: React.FC<CalculatorProps> = ({ initialValue = 0 }) => {
 export default Calculator;
 
 export class Hello {
-  constructor() {}
+  private readonly hello = inject(Hello);
+
+  constructor() {
+    console.log(this.hello);
+  }
 
   someMethod(): string {
     return "Hello world";
@@ -49,3 +53,7 @@ if (true) {
 }
 
 console.log(hello);
+
+function inject(origin: Function): void {
+  console.log(origin);
+}
