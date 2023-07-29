@@ -174,7 +174,7 @@ theme.set_highlights = function()
 	hl(0, "TelescopeResultsTitle", { fg = c.bg, bg = c.blue })
 	hl(0, "TelescopeDiffAdd", { fg = c.green, bg = "NONE" })
 	hl(0, "TelescopeDiffChange", { fg = c.yellow, bg = "NONE" })
-	hl(0, "TelescopeDiffDelete", { fg = c.red, bg = "NONE" })
+	hl(0, "TelescopeDiffDelete", { fg = c.red, bg = "NONE" }) -- some comment
 
 	-- NvimTree
 	hl(0, "NvimTreeIndentMarker", { fg = c.nvim_tree_indent_marker, bg = "NONE" })
