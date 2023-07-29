@@ -154,9 +154,9 @@ theme.set_highlights = function()
 	hl(0, "@lsp.mod.global.lua", { fg = c.green, bg = "NONE" })
 
 	-- Telescope
-	hl(0, "TelescopeSelection", { fg = "NONE", bg = c.visual })
 	hl(0, "TelescopeMatching", { fg = c.green, bg = "NONE", bold = true })
 	hl(0, "TelescopeBorder", { fg = "NONE", bg = "NONE" })
+	hl(0, "TelescopeSelection", { fg = "NONE", bg = c.visual })
 	hl(0, "TelescopeMatching", { fg = c.green, bg = "NONE" })
 	hl(0, "TelescopePromptBorder", { fg = "NONE", bg = "NONE" })
 	hl(0, "TelescopePromptNormal", { fg = c.fg, "NONE" })
