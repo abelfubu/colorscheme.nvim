@@ -193,11 +193,14 @@ theme.set_highlights = function()
 	hl(0, "IlluminatedWordText", { fg = "NONE", bg = c.word_highlight })
 	hl(0, "IlluminatedWordRead", { fg = "NONE", bg = c.word_highlight })
 	hl(0, "IlluminatedWordWrite", { fg = "NONE", bg = c.word_highlight })
-
 	-- DevIcons
 	hl(0, "DevIconLua", { fg = c.purple3, bg = "NONE" })
 
+	--Navic
+
 	hl(0, "NavicText", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsModule", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsFile", { fg = c.blue, bg = "NONE" })
 	hl(0, "NavicIcons", { fg = c.blue, bg = "NONE" })
 end
 
