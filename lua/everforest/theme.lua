@@ -37,7 +37,7 @@ theme.set_highlights = function()
 	hl(0, "Directory", { fg = c.blue, bg = "NONE" })
 	hl(0, "Title", { fg = c.parameter, bg = "NONE", bold = true })
 	hl(0, "ErrorMsg", { link = "Error" })
-	hl(0, "Search", { fg = "NONE", bg = c.search_blue })
+	hl(0, "Search", { fg = "NONE", bg = c.search_blue, blend = 50 })
 	hl(0, "NonText", { fg = c.bg, bg = "NONE" })
 	hl(0, "Variable", { fg = c.fg, bg = "NONE" })
 	hl(0, "String", { fg = c.red, bg = "NONE" })
@@ -174,7 +174,7 @@ theme.set_highlights = function()
 	hl(0, "TelescopeResultsTitle", { fg = c.bg, bg = c.blue })
 	hl(0, "TelescopeDiffAdd", { fg = c.green, bg = "NONE" })
 	hl(0, "TelescopeDiffChange", { fg = c.yellow, bg = "NONE" })
-	hl(0, "TelescopeDiffDelete", { fg = c.red, bg = "NONE" }) -- some comment
+	hl(0, "TelescopeDiffDelete", { fg = c.red, bg = "NONE" })
 
 	-- NvimTree
 	hl(0, "NvimTreeIndentMarker", { fg = c.nvim_tree_indent_marker, bg = "NONE" })
