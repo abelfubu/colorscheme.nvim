@@ -13,12 +13,12 @@ local colors = {
 local night_owl = {
 	normal = {
 		a = { bg = colors.magenta, fg = colors.dark, gui = "bold" },
-		b = { bg = colors.dark, fg = colors.light },
+		b = { bg = "NONE", fg = colors.green },
 		c = { bg = colors.dark, fg = colors.light },
 	},
 	insert = {
 		a = { bg = colors.green, fg = colors.dark, gui = "bold" },
-		b = { bg = colors.dark, fg = colors.light },
+		b = { bg = "NONE", fg = colors.green },
 		c = { bg = colors.dark, fg = colors.light },
 	},
 	visual = {

@@ -154,7 +154,7 @@ theme.set_highlights = function()
 
 	-- Telescope
 	hl(0, "TelescopeSelection", { fg = "NONE", bg = c.visual })
-	hl(0, "TelescopeMatching", { fg = c.nvim_tree_file, bg = "NONE", bold = true })
+	hl(0, "TelescopeMatching", { fg = c.green, bg = "NONE", bold = true })
 	hl(0, "TelescopeBorder", { fg = c.ui_border, bg = "NONE" })
 
 	-- NvimTree
