@@ -43,3 +43,5 @@ export class Hello {
 }
 
 let hello = "hello";
+
+console.log(hello);
