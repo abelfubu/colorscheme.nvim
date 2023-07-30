@@ -62,6 +62,7 @@ theme.set_highlights = function()
 	hl(0, "TabLineSel", { fg = c.gray2, bg = c.tab_active_bg })
 	hl(0, "TabLine", { fg = c.ui_border, bg = c.tab_inactive_bg })
 	hl(0, "TabLineFill", { fg = c.bg, bg = "NONE" })
+	hl(0, "EndOfBuffer", { fg = c.bg, bg = "NONE" })
 
 	-- Treesitter
 	hl(0, "@class.constructor", { fg = c.blue, bg = "NONE", italic = true })
