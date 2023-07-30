@@ -157,6 +157,7 @@ theme.set_highlights = function()
 
 	-- SemanticTokens
 	hl(0, "@lsp.type.parameter", { fg = c.light_orange, bg = "NONE" })
+	hl(0, "@lsp.type.qualifier", { fg = c.blue, bg = "NONE" })
 	hl(0, "@lsp.type.property", { fg = c.fg, bg = "NONE" })
 	hl(0, "@lsp.type.variable", { fg = c.light_orange, bg = "NONE" })
 	hl(0, "@lsp.type.variable.lua", { link = "Variable" })
