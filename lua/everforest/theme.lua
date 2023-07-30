@@ -14,13 +14,13 @@ theme.set_highlights = function()
 	hl(0, "Comment", { fg = c.dark_cyan, bg = "NONE", italic = true })
 	hl(0, "Folded", { fg = c.dark_cyan, bg = c.folded_bg })
 	hl(0, "FoldColumn", { fg = c.dark_cyan, bg = c.bg })
-	hl(0, "FloatBorder", { fg = c.cyan, bg = c.bg })
-	hl(0, "FloatTitle", { fg = c.purple, bg = c.bg, bold = true })
+	hl(0, "FloatBorder", { fg = c.bg, bg = "NONE" })
+	hl(0, "FloatTitle", { fg = c.green, bg = "NONE", bold = true })
 	hl(0, "VertSplit", { fg = c.gray, bg = "NONE" })
 	hl(0, "CursorLine", { fg = "NONE", bg = "NONE" })
 	hl(0, "CursorColumn", { fg = "NONE", bg = c.cursor_fg })
 	hl(0, "ColorColumn", { fg = "NONE", bg = "NONE" })
-	hl(0, "NormalFloat", { fg = "NONE", bg = c.bg, sp = "NONE", blend = 0 })
+	hl(0, "NormalFloat", { fg = c.fg, bg = "NONE", sp = "NONE", blend = 0 })
 	hl(0, "Visual", { link = "VisualActive", blend = 50 })
 	hl(0, "VisualActive", { fg = "NONE", bg = c.visual, blend = 50 })
 	hl(0, "VisualInactive", { fg = "NONE", bg = c.dark_purple })
@@ -203,8 +203,8 @@ theme.set_highlights = function()
 	-- hl(0, "NeoTreeFileName", { fg = "NONE", bg = "NONE" }) -- File name, when not overwritten by another status.
 	-- hl(0, "NeoTreeFileNameOpened", { fg = "NONE", bg = "NONE" }) -- File name when the file is open. Not used yet.
 	-- hl(0, "NeoTreeFilterTerm", { fg = "NONE", bg = "NONE" }) -- The filter term, as displayed in the root node.
-	-- hl(0, "NeoTreeFloatBorder", { fg = "NONE", bg = "NONE" }) -- The border for pop-up windows.
-	-- hl(0, "NeoTreeFloatTitle", { fg = "NONE", bg = "NONE" }) -- Used for the title text of pop-ups when the border-style
+	hl(0, "NeoTreeFloatBorder", { fg = c.bg, bg = "NONE" }) -- The border for pop-up windows.
+	hl(0, "NeoTreeFloatTitle", { fg = c.green, bg = "NONE" }) -- Used for the title text of pop-ups when the border-style
 	-- hl(0, "NeoTreeTitleBar", { fg = "NONE", bg = "NONE" }) -- Used for the title bar of pop-ups, when the border-style
 	-- hl(0, "NeoTreeGitAdded", { fg = "NONE", bg = "NONE" }) -- File name when the git status is added.
 	-- hl(0, "NeoTreeGitConflict", { fg = "NONE", bg = "NONE" }) -- File name when the git status is conflict.
