@@ -156,9 +156,9 @@ theme.set_highlights = function()
 	hl(0, "LspInfoBorder", { fg = c.ui_border, bg = "NONE" })
 
 	-- SemanticTokens
-	hl(0, "@lsp.type.parameter", { fg = c.light, bg = "NONE" })
+	hl(0, "@lsp.type.parameter", { fg = c.light_orange, bg = "NONE" })
 	hl(0, "@lsp.type.property", { fg = c.fg, bg = "NONE" })
-	hl(0, "@lsp.type.variable", { fg = c.light, bg = "NONE" })
+	hl(0, "@lsp.type.variable", { fg = c.light_orange, bg = "NONE" })
 	hl(0, "@lsp.type.variable.lua", { link = "Variable" })
 	hl(0, "@lsp.mod.global.lua", { fg = c.green, bg = "NONE" })
 
