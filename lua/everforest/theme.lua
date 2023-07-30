@@ -5,7 +5,7 @@ local theme = {}
 
 theme.set_highlights = function()
 	-- highlights
-	hl(0, "Normal", { fg = c.light, bg = "NONE" })
+	hl(0, "Normal", { fg = c.light_yellow, bg = "NONE" })
 	hl(0, "SignColumn", { fg = "NONE", bg = c.bg })
 	hl(0, "Pmenu", { fg = "NONE", bg = c.dark })
 	hl(0, "PmenuSel", { fg = "NONE", bg = c.quickfix_line })
@@ -62,7 +62,7 @@ theme.set_highlights = function()
 	hl(0, "TabLineSel", { fg = c.gray2, bg = c.tab_active_bg })
 	hl(0, "TabLine", { fg = c.ui_border, bg = c.tab_inactive_bg })
 	hl(0, "TabLineFill", { fg = c.bg, bg = "NONE" })
-	hl(0, "EndOfBuffer", { fg = c.bg, bg = "NONE" })
+	hl(0, "EndOfBuffer", { fg = "NONE", bg = "NONE" })
 
 	-- Treesitter
 	hl(0, "@class.constructor", { fg = c.blue, bg = "NONE", italic = true })
