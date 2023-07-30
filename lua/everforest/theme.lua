@@ -5,7 +5,7 @@ local theme = {}
 
 theme.set_highlights = function()
 	-- highlights
-	hl(0, "Normal", { fg = c.light, bg = "NONE" })
+	hl(0, "Normal", { fg = c.light_cyan, bg = "NONE" })
 	hl(0, "SignColumn", { fg = "NONE", bg = c.bg })
 	hl(0, "Pmenu", { fg = "NONE", bg = c.dark })
 	hl(0, "PmenuSel", { fg = "NONE", bg = c.quickfix_line })
