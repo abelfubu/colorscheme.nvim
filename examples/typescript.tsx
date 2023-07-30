@@ -36,9 +36,13 @@ export default Calculator;
 
 export class Hello {
   private readonly hello = inject(Hello);
+  private obj = {
+    key: "value",
+    age: 42,
+  };
 
   constructor() {
-    console.log(this.hello);
+    console.log(this.hello, this.obj);
   }
 
   someMethod(): string {
