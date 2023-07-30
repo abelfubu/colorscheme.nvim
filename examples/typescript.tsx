@@ -45,8 +45,8 @@ export class Hello {
     console.log(this.hello, this.obj);
   }
 
-  someMethod(): string {
-    return "Hello world";
+  someMethod<T>(value: T): string {
+    return `Hello world: ${value}`;
   }
 }
 
