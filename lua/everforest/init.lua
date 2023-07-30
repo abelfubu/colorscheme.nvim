@@ -11,6 +11,7 @@ M.setup = function()
 
 	vim.o.termguicolors = true
 	vim.g.colors_name = "everforest"
+	vim.opt.fillchars = { eob = " " }
 
 	theme.set_highlights()
 end
