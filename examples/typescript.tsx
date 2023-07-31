@@ -32,6 +32,14 @@ const Calculator: React.FC<CalculatorProps> = ({ initialValue = 0 }) => {
   );
 };
 
+// @ts-ignore
+@Component({
+  selector: "a",
+  standalone: true,
+  template: ` <h1>HEllot</h1> `,
+})
+export class SomeComponent {}
+
 export default Calculator;
 
 export class Hello {

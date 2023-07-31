@@ -214,7 +214,7 @@ theme.set_highlights = function()
 	-- hl(0, "NeoTreeGitConflict", { fg = "NONE", bg = "NONE" }) -- File name when the git status is conflict.
 	-- hl(0, "NeoTreeGitDeleted", { fg = "NONE", bg = "NONE" }) -- File name when the git status is deleted.
 	-- hl(0, "NeoTreeGitIgnored", { fg = "NONE", bg = "NONE" }) -- File name when the git status is ignored.
-	-- hl(0, "NeoTreeGitModified", { fg = c.orange, bg = "NONE" }) -- File name when the git status is modified.
+	hl(0, "NeoTreeGitModified", { fg = c.blue, bg = "NONE", bold = true }) -- File name when the git status is modified.
 	hl(0, "NeoTreeGitUnstaged", { fg = c.orange, bg = "NONE" }) -- File name when the git status is modified.
 	-- hl(0, "NeoTreeGitUnstaged", { fg = "NONE", bg = "NONE" }) -- Used for git unstaged symbol.
 	-- hl(0, "NeoTreeGitUntracked", { fg = "NONE", bg = "NONE" }) -- File name when the git status is untracked.
