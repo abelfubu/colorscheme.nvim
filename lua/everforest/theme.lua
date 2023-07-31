@@ -168,7 +168,7 @@ theme.set_highlights = function()
 
 	-- Telescope
 	hl(0, "TelescopeMatching", { fg = c.light, bg = "NONE", bold = true })
-	hl(0, "TelescopeBorder", { fg = c.bg, bg = "NONE" })
+	hl(0, "TelescopeBorder", { fg = c.grey, bg = "NONE" })
 	hl(0, "TelescopeSelection", { fg = c.blue, bg = "NONE" })
 	hl(0, "TelescopePromptBorder", { fg = c.bg, bg = "NONE" })
 	hl(0, "TelescopePromptNormal", { fg = c.fg, bg = "NONE" })
@@ -212,9 +212,9 @@ theme.set_highlights = function()
 	-- hl(0, "NeoTreeTitleBar", { fg = "NONE", bg = "NONE" }) -- Used for the title bar of pop-ups, when the border-style
 	-- hl(0, "NeoTreeGitAdded", { fg = "NONE", bg = "NONE" }) -- File name when the git status is added.
 	-- hl(0, "NeoTreeGitConflict", { fg = "NONE", bg = "NONE" }) -- File name when the git status is conflict.
-	-- hl(0, "NeoTreeGitDeleted", { fg = "NONE", bg = "NONE" }) -- File name when the git status is deleted.
+	hl(0, "NeoTreeGitDeleted", { fg = c.red, bg = "NONE" }) -- File name when the git status is deleted.
 	-- hl(0, "NeoTreeGitIgnored", { fg = "NONE", bg = "NONE" }) -- File name when the git status is ignored.
-	hl(0, "NeoTreeGitModified", { fg = c.blue, bg = "NONE", bold = true }) -- File name when the git status is modified.
+	hl(0, "NeoTreeGitModified", { fg = c.orange, bg = "NONE", bold = true }) -- File name when the git status is modified.
 	hl(0, "NeoTreeGitUnstaged", { fg = c.orange, bg = "NONE" }) -- File name when the git status is modified.
 	-- hl(0, "NeoTreeGitUnstaged", { fg = "NONE", bg = "NONE" }) -- Used for git unstaged symbol.
 	-- hl(0, "NeoTreeGitUntracked", { fg = "NONE", bg = "NONE" }) -- File name when the git status is untracked.
@@ -230,7 +230,7 @@ theme.set_highlights = function()
 	-- hl(0, "NeoTreeVertSplit", { fg = "NONE", bg = "NONE" }) -- |hl-VertSplit| override in Neo-tree window.
 	-- hl(0, "NeoTreeWinSeparator", { fg = "NONE", bg = "NONE" }) --  |hl-WinSeparator| override in Neo-tree window.
 	-- hl(0, "NeoTreeEndOfBuffer", { fg = "NONE", bg = "NONE" }) --   |hl-EndOfBuffer| override in Neo-tree window.
-	-- hl(0, "NeoTreeRootName", { fg = "NONE", bg = "NONE" }) -- The name of the root node.
+	hl(0, "NeoTreeRootName", { fg = c.light, bg = "NONE" }) -- The name of the root node.
 	-- hl(0, "NeoTreeSymbolicLinkTarget", { fg = "NONE", bg = "NONE" }) --Symbolic link target.
 	-- hl(0, "NeoTreeTitleBar", { fg = "NONE", bg = "NONE" }) -- Used for the title bar of pop-ups, when the border-style
 	-- hl(0, "NeoTreeWindowsHidden", { fg = "NONE", bg = "NONE" }) -- Used for icons and names that are hidden on Windows.
@@ -251,34 +251,34 @@ theme.set_highlights = function()
 	hl(0, "DevIconLua", { fg = c.purple3, bg = "NONE" })
 
 	--Navic
-	hl(0, "NavicIconsFile", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsModule", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsNamespace", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsPackage", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsClass", { bg = "NONE", fg = c.yellow })
-	hl(0, "NavicIconsMethod", { bg = "NONE", fg = c.yellow })
-	hl(0, "NavicIconsProperty", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsField", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsConstructor", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsEnum", { bg = "NONE", fg = c.green })
-	hl(0, "NavicIconsInterface", { bg = "NONE", fg = c.green })
-	hl(0, "NavicIconsFunction", { bg = "NONE", fg = c.yellow })
-	hl(0, "NavicIconsVariable", { bg = "NONE", fg = c.green })
-	hl(0, "NavicIconsConstant", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsString", { bg = "NONE", fg = c.red })
-	hl(0, "NavicIconsNumber", { bg = "NONE", fg = c.cyan })
-	hl(0, "NavicIconsBoolean", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsArray", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsObject", { bg = "NONE", fg = c.yellow })
-	hl(0, "NavicIconsKey", { bg = "NONE", fg = c.fg })
-	hl(0, "NavicIconsNull", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsEnumMember", { bg = "NONE", fg = c.green })
-	hl(0, "NavicIconsStruct", { bg = "NONE", fg = c.green })
-	hl(0, "NavicIconsEvent", { bg = "NONE", fg = c.green })
-	hl(0, "NavicIconsOperator", { bg = "NONE", fg = c.blue })
-	hl(0, "NavicIconsTypeParameter", { bg = "NONE", fg = c.green })
-	hl(0, "NavicText", { bg = "NONE", fg = c.light })
-	hl(0, "NavicSeparator", { bg = "NONE", fg = c.yellow })
+	hl(0, "NavicIconsFile", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsModule", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsNamespace", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsPackage", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsClass", { fg = c.yellow, bg = "NONE" })
+	hl(0, "NavicIconsMethod", { fg = c.yellow, bg = "NONE" })
+	hl(0, "NavicIconsProperty", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsField", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsConstructor", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsEnum", { fg = c.green, bg = "NONE" })
+	hl(0, "NavicIconsInterface", { fg = c.green, bg = "NONE" })
+	hl(0, "NavicIconsFunction", { fg = c.yellow, bg = "NONE" })
+	hl(0, "NavicIconsVariable", { fg = c.green, bg = "NONE" })
+	hl(0, "NavicIconsConstant", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsString", { fg = c.red, bg = "NONE" })
+	hl(0, "NavicIconsNumber", { fg = c.cyan, bg = "NONE" })
+	hl(0, "NavicIconsBoolean", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsArray", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsObject", { fg = c.yellow, bg = "NONE" })
+	hl(0, "NavicIconsKey", { fg = c.fg, bg = "NONE" })
+	hl(0, "NavicIconsNull", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsEnumMember", { fg = c.green, bg = "NONE" })
+	hl(0, "NavicIconsStruct", { fg = c.green, bg = "NONE" })
+	hl(0, "NavicIconsEvent", { fg = c.green, bg = "NONE" })
+	hl(0, "NavicIconsOperator", { fg = c.blue, bg = "NONE" })
+	hl(0, "NavicIconsTypeParameter", { fg = c.green, bg = "NONE" })
+	hl(0, "NavicText", { fg = c.light, bg = "NONE" })
+	hl(0, "NavicSeparator", { fg = c.yellow, bg = "NONE" })
 
 	--LazyGit
 	hl(0, "LazyGitFloat", { bg = "NONE", fg = c.fg })

@@ -18,6 +18,7 @@ const Calculator: React.FC<CalculatorProps> = ({ initialValue = 0 }) => {
       const parsedInput = eval(input);
       setResult(parsedInput);
     } catch (error) {
+      console.log("One Change!");
       setResult(NaN);
     }
   };
