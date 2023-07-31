@@ -168,7 +168,7 @@ theme.set_highlights = function()
 
 	-- Telescope
 	hl(0, "TelescopeMatching", { fg = c.light, bg = "NONE", bold = true })
-	hl(0, "TelescopeBorder", { fg = c.grey, bg = "NONE" })
+	hl(0, "TelescopeBorder", { fg = c.green, bg = "NONE" })
 	hl(0, "TelescopeSelection", { fg = c.blue, bg = "NONE" })
 	hl(0, "TelescopePromptBorder", { fg = c.bg, bg = "NONE" })
 	hl(0, "TelescopePromptNormal", { fg = c.fg, bg = "NONE" })
