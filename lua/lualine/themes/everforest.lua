@@ -22,26 +22,36 @@ local night_owl = {
 		a = { bg = colors.green, fg = colors.dark, gui = "bold" },
 		b = { bg = "NONE", fg = colors.green },
 		c = { bg = "NONE", fg = colors.yellow },
+		y = { bg = colors.green, fg = colors.dark },
+		z = { bg = colors.dark, fg = colors.light },
 	},
 	visual = {
 		a = { bg = colors.yellow, fg = colors.dark, gui = "bold" },
 		b = { bg = "NONE", fg = colors.green },
 		c = { bg = "NONE", fg = colors.yellow },
+		y = { bg = colors.green, fg = colors.dark },
+		z = { bg = colors.dark, fg = colors.light },
 	},
 	replace = {
 		a = { bg = colors.orange, fg = colors.dark, gui = "bold" },
 		b = { bg = "NONE", fg = colors.green },
 		c = { bg = "NONE", fg = colors.yellow },
+		y = { bg = colors.green, fg = colors.dark },
+		z = { bg = colors.dark, fg = colors.light },
 	},
 	command = {
 		a = { bg = colors.cyan, fg = colors.dark, gui = "bold" },
 		b = { bg = "NONE", fg = colors.green },
 		c = { bg = "NONE", fg = colors.yellow },
+		y = { bg = colors.green, fg = colors.dark },
+		z = { bg = colors.dark, fg = colors.light },
 	},
 	inactive = {
 		a = { bg = colors.cyan, fg = colors.dark, gui = "bold" },
 		b = { bg = "NONE", fg = colors.green },
 		c = { bg = "NONE", fg = colors.yellow },
+		y = { bg = colors.green, fg = colors.dark },
+		z = { bg = colors.dark, fg = colors.light },
 	},
 }
 
