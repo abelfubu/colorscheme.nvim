@@ -278,7 +278,7 @@ theme.set_highlights = function()
 	hl(0, "NavicIconsOperator", { fg = c.blue, bg = "NONE" })
 	hl(0, "NavicIconsTypeParameter", { fg = c.green, bg = "NONE" })
 	hl(0, "NavicText", { fg = c.light, bg = "NONE" })
-	hl(0, "NavicSeparator", { fg = c.yellow, bg = "NONE" })
+	hl(0, "NavicSeparator", { fg = c.gray, bg = "NONE" })
 
 	--LazyGit
 	hl(0, "LazyGitFloat", { bg = "NONE", fg = c.fg })
