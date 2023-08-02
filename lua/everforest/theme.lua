@@ -87,7 +87,7 @@ theme.set_highlights = function()
 	hl(0, "@keyword.static", { link = "Statement" })
 	hl(0, "@keyword.extends", { link = "Statement" })
 	hl(0, "@keyword.coroutine", { link = "Statement" })
-	hl(0, "@keyword.operator", { fg = c.yellow, bg = "NONE" })
+	hl(0, "@keyword.operator", { fg = c.blue, bg = "NONE" })
 	hl(0, "@keyword.jsdoc", { fg = c.magenta, bg = "NONE", nocombine = true })
 	hl(0, "@keyword.command", { fg = c.green, bg = "NONE", nocombine = true })
 	hl(0, "@command", { fg = c.green, bg = "NONE", nocombine = true })
@@ -217,7 +217,7 @@ theme.set_highlights = function()
 	hl(0, "NeoTreeGitModified", { fg = c.orange, bg = "NONE", bold = true }) -- File name when the git status is modified.
 	hl(0, "NeoTreeGitUnstaged", { fg = c.orange, bg = "NONE" }) -- File name when the git status is modified.
 	-- hl(0, "NeoTreeGitUnstaged", { fg = "NONE", bg = "NONE" }) -- Used for git unstaged symbol.
-	-- hl(0, "NeoTreeGitUntracked", { fg = "NONE", bg = "NONE" }) -- File name when the git status is untracked.
+	hl(0, "NeoTreeGitUntracked", { fg = c.cyan, bg = "NONE", bold = true }) -- File name when the git status is untracked.
 	hl(0, "NeoTreeGitStaged", { fg = c.green, bg = "NONE" }) -- Used for git staged symbol.
 	-- hl(0, "NeoTreeHiddenByName", { fg = "NONE", bg = "NONE" }) -- Used for icons and names when `hide_by_name` is used.
 	-- hl(0, "NeoTreeIndentMarker", { fg = "NONE", bg = "NONE" }) -- The style of indentation markers (guides). By default,
