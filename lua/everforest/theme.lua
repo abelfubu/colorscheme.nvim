@@ -136,6 +136,7 @@ theme.set_highlights = function()
 	hl(0, "@string.regex", { fg = c.red, bg = "NONE", nocombine = true })
 	hl(0, "@string.regexFlags", { fg = c.reg, bg = "NONE", nocombine = true })
 	hl(0, "@function.builtin.lua", { fg = c.blue, bg = "NONE", italic = true })
+	hl(0, "@angular", { fg = c.light, bg = "NONE", italic = true })
 
 	-- Whichkey
 	hl(0, "WhichKey", { fg = c.fg, bg = "NONE" })
