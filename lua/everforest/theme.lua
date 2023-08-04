@@ -22,7 +22,7 @@ theme.set_highlights = function()
 	hl(0, "ColorColumn", { fg = "NONE", bg = "NONE" })
 	hl(0, "NormalFloat", { fg = c.fg, bg = "NONE", sp = "NONE", blend = 0 })
 	hl(0, "Visual", { link = "VisualActive", blend = 50 })
-	hl(0, "VisualActive", { fg = "NONE", bg = c.bg_light, blend = 50 })
+	hl(0, "VisualActive", { fg = "NONE", bg = c.bg_light_plus, blend = 50 })
 	hl(0, "VisualInactive", { fg = "NONE", bg = c.bg_light })
 	hl(0, "DiffAdd", { fg = c.bg, bg = c.sign_add })
 	hl(0, "DiffChange", { fg = c.bg, bg = c.sign_change, underline = true })
@@ -202,7 +202,7 @@ theme.set_highlights = function()
 	-- NeoTree
 	-- hl(0, "NeoTreeBufferNumber", { fg = "NONE", bg = "NONE" }) -- The buffer number shown in the buffers source.
 	-- hl(0, "NeoTreeCursorLine", { fg = "NONE", bg = "NONE" }) --        |hl-CursorLine| override in Neo-tree window.
-	-- hl(0, "NeoTreeDimText", { fg = "NONE", bg = "NONE" }) -- Greyed out text used in various places.
+	hl(0, "NeoTreeDimText", { fg = c.bg_light_plus, bg = "NONE" }) -- Greyed out text used in various places.
 	hl(0, "NeoTreeDirectoryIcon", { fg = c.line_number_active_fg, bg = "NONE" }) -- Directory icon.
 	-- hl(0, "NeoTreeDirectoryName", { fg = "NONE", bg = "NONE" }) -- Directory name.
 	-- hl(0, "NeoTreeDotfile", { fg = "NONE", bg = "NONE" }) -- Used for icons and names when dotfiles are filtered.
@@ -212,7 +212,7 @@ theme.set_highlights = function()
 	-- hl(0, "NeoTreeFilterTerm", { fg = "NONE", bg = "NONE" }) -- The filter term, as displayed in the root node.
 	hl(0, "NeoTreeFloatBorder", { fg = c.bg, bg = "NONE" }) -- The border for pop-up windows.
 	hl(0, "NeoTreeFloatTitle", { fg = c.green, bg = "NONE" }) -- Used for the title text of pop-ups when the border-style
-	-- hl(0, "NeoTreeTitleBar", { fg = "NONE", bg = "NONE" }) -- Used for the title bar of pop-ups, when the border-style
+	hl(0, "NeoTreeTitleBar", { fg = c.bg_light_plus, bg = "NONE" }) -- Used for the title bar of pop-ups, when the border-style
 	-- hl(0, "NeoTreeGitAdded", { fg = "NONE", bg = "NONE" }) -- File name when the git status is added.
 	-- hl(0, "NeoTreeGitConflict", { fg = "NONE", bg = "NONE" }) -- File name when the git status is conflict.
 	hl(0, "NeoTreeGitDeleted", { fg = c.red, bg = "NONE" }) -- File name when the git status is deleted.
@@ -224,7 +224,7 @@ theme.set_highlights = function()
 	hl(0, "NeoTreeGitStaged", { fg = c.green, bg = "NONE" }) -- Used for git staged symbol.
 	-- hl(0, "NeoTreeHiddenByName", { fg = "NONE", bg = "NONE" }) -- Used for icons and names when `hide_by_name` is used.
 	-- hl(0, "NeoTreeIndentMarker", { fg = "NONE", bg = "NONE" }) -- The style of indentation markers (guides). By default,
-	-- hl(0, "NeoTreeExpander", { fg = "NONE", bg = "NONE" }) -- Used for collapsed/expanded icons.
+	hl(0, "NeoTreeExpander", { fg = c.green, bg = "NONE" }) -- Used for collapsed/expanded icons.
 	-- hl(0, "NeoTreeNormal", { fg = "NONE", bg = "NONE" }) --   |hl-Normal| override in Neo-tree window.
 	-- hl(0, "NeoTreeNormalNC", { fg = "NONE", bg = "NONE" }) -- |hl-NormalNC| override in Neo-tree window.
 	-- hl(0, "NeoTreeSignColumn", { fg = "NONE", bg = "NONE" }) --   |hl-SignColumn| override in Neo-tree window.
