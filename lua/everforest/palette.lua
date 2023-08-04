@@ -2,6 +2,7 @@ local colors = {
 	fg = "#d3c6aa",
 	normal = "#d7ccaa",
 	bg = "#1e222a",
+	bg_light = "#2A2D35",
 	folded_bg = "#092135",
 	cursor_fg = "#80a4c2",
 	line_number_fg = "#4b6479",
