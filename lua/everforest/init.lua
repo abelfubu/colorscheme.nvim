@@ -2,10 +2,12 @@ local M = {}
 local theme = require("everforest.theme")
 
 function M.load(ops)
-	print(ops)
+	if ops and ops.italic then
+		M.config.italic = true
+	end
 end
 
-M.setup = function(opts)
+M.setup = function()
 	vim.cmd("hi clear")
 
 	vim.o.background = "dark"
@@ -17,7 +19,7 @@ M.setup = function(opts)
 	vim.g.colors_name = "everforest"
 	vim.opt.fillchars = { eob = " " }
 
-	if opts and opts.italic then
+	if M.config and M.config.italic then
 		theme.set_highlights({ italic = true })
 	else
 		theme.set_highlights({ italic = false })
