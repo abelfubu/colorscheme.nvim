@@ -1,7 +1,7 @@
 local M = {}
 local theme = require("everforest.theme")
 
-M.setup = function()
+M.setup = function(opts)
 	vim.cmd("hi clear")
 
 	vim.o.background = "dark"
@@ -13,7 +13,7 @@ M.setup = function()
 	vim.g.colors_name = "everforest"
 	vim.opt.fillchars = { eob = " " }
 
-	theme.set_highlights()
+	theme.set_highlights(opts)
 end
 
 return M
