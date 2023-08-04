@@ -2,14 +2,14 @@ local M = {}
 local theme = require("everforest.theme")
 
 function M.load(ops)
-	vim.cmd.print("LOAD OPS: " .. vim.inspect(ops))
+	vim.cmd.print("LOAD OPS: " .. ops)
 	if ops and ops.italic then
 		M.config.italic = true
 	end
 end
 
 M.setup = function(ops)
-	vim.cmd.print("SETUP OPS: " .. vim.inspect(ops))
+	vim.cmd.print("SETUP OPS: " .. ops)
 	vim.cmd("hi clear")
 
 	vim.o.background = "dark"
