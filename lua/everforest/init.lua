@@ -10,7 +10,7 @@ function M.load(ops)
 end
 
 M.setup = function(ops)
-	vim.cmd.print(ops.italic)
+	vim.cmd.print("HELLO!")
 	vim.cmd("hi clear")
 
 	vim.o.background = "dark"
