@@ -10,7 +10,6 @@ function M.load(ops)
 end
 
 M.setup = function(ops)
-	vim.cmd.print("SETUP OPS: ")
 	vim.cmd.print(ops)
 	vim.cmd("hi clear")
 
