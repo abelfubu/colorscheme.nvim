@@ -13,11 +13,15 @@ M.setup = function(opts)
 	vim.g.colors_name = "everforest"
 	vim.opt.fillchars = { eob = " " }
 
-	if opts and opts.italic then
-		theme.set_highlights({ italic = true })
+	local italics = true
+
+	if opts and opts.italic ~= nil then
+		italics = true
 	else
-		theme.set_highlights({ italic = false })
+		italics = false
 	end
+
+	theme.set_highlights({ italic = italics })
 end
 
 return M
