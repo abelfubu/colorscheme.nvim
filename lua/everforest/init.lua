@@ -1,6 +1,10 @@
 local M = {}
 local theme = require("everforest.theme")
 
+function M.load(ops)
+	print(ops)
+end
+
 M.setup = function(opts)
 	vim.cmd("hi clear")
 
