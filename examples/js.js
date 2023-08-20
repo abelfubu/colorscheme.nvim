@@ -1,4 +1,4 @@
-'use strict';
+"use strict";
 class Sale {
   constructor(price) {
     [this.decoratorsList, this.price] = [[], price];
@@ -26,11 +26,11 @@ class Sale {
   }
 }
 
-let foo = '123';
+let foo = "123";
 
 let sale = new Sale(500);
-sale.decorate('fedtax');
-sale.decorate('quebec');
+sale.decorate("fedtax");
+sale.decorate("quebec");
 console.log(sale.getPrice()); // 112.88
 
 getPrice();
@@ -58,7 +58,9 @@ for (let i = 0; i < 10; i++) {
 if (true) {
 }
 
-while (true) {}
+while (true) {
+  console.log("HELLO!");
+}
 
 switch (2) {
   case 2:

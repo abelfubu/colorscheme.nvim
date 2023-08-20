@@ -74,3 +74,4 @@ operator: ("of") @operator.of
 
 ((regex_flags) @string.regexFlags
                (#set! "priority" 200))
+

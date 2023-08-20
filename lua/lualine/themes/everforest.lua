@@ -1,4 +1,4 @@
-local colors = {
+local everforest = {
 	dark = "#1e222a",
 	light = "#d3c6aa",
 	magenta = "#e67e80",
@@ -6,8 +6,18 @@ local colors = {
 	yellow = "#dbbc7f",
 	orange = "#e69875",
 	cyan = "#83c092",
-	dark_blue = "#0e293f",
 	light_blue = "#a7c080",
+}
+
+local colors = {
+	dark = "#1e222a",
+	light = "#b5e8e0",
+	magenta = "#f38ba8",
+	green = "#abe9b3",
+	yellow = "#fae3b0",
+	orange = "#f8bd96",
+	cyan = "#89dceb",
+	light_blue = "#89b4fa",
 }
 
 local night_owl = {
