@@ -29,7 +29,7 @@ local night_owl = {
 		z = { bg = "NONE", fg = colors.green },
 	},
 	insert = {
-		a = { bg = colors.dark, fg = colors.dark, gui = "bold" },
+		a = { bg = colors.dark, fg = colors.blue, gui = "bold" },
 		b = { bg = "NONE", fg = colors.green },
 		c = { bg = "NONE", fg = colors.yellow },
 		y = { bg = colors.green, fg = colors.dark },
