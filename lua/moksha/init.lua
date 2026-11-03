@@ -2,7 +2,7 @@ local M = {}
 
 ---@class SetupOptions
 ---@field transparent? boolean
----@field palette? string name of a palette in moksha.palettes, or "auto" to follow vim.o.background
+---@field palette? "auto" | "github_dark" | "github_light" | "merino_dark"
 
 ---@class Palette
 ---@field bg string
@@ -76,9 +76,9 @@ local M = {}
 ---@field yellow_deep string
 ---@field yellow_light string
 
----@param user_conf SetupOptions?
-function M.setup(user_conf)
-	local opts = vim.tbl_deep_extend("force", { palette = "auto", transparent = false }, user_conf or {})
+---@param opts SetupOptions?
+function M.setup(opts)
+	local opts = vim.tbl_deep_extend("force", { palette = "auto", transparent = false }, opts or {})
 
 	vim.cmd("highlight clear")
 	if vim.fn.exists("syntax_on") == 1 then

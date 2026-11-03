@@ -722,7 +722,7 @@ M.get_highlight = function(palette)
 				bold = true,
 			},
 			default = true,
-			fg = palette.blue,
+			fg = palette.white,
 		},
 		BufferLineBufferVisible = {
 			default = true,
@@ -3139,7 +3139,7 @@ M.get_highlight = function(palette)
 		},
 		NoiceCmdlinePopupBorder = {
 			default = true,
-			link = "DiagnosticSignInfo",
+			link = "FloatBorder",
 		},
 		NoiceCmdlinePopupBorderCalculator = {
 			default = true,
@@ -3167,7 +3167,7 @@ M.get_highlight = function(palette)
 		},
 		NoiceCmdlinePopupBorderSearch = {
 			default = true,
-			link = "DiagnosticSignWarn",
+			link = "FloatBorder",
 		},
 		NoiceCmdlinePopupTitle = {
 			default = true,
