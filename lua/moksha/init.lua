@@ -1,9 +1,5 @@
 local M = {}
 
----@class SetupOptions
----@field transparent? boolean
----@field palette? "auto" | "github_dark" | "github_light" | "merino_dark"
-
 ---@class Palette
 ---@field bg string
 ---@field bg_subtle string
@@ -76,9 +72,12 @@ local M = {}
 ---@field yellow_deep string
 ---@field yellow_light string
 
----@param opts SetupOptions?
-function M.setup(opts)
-	local opts = vim.tbl_deep_extend("force", { palette = "auto", transparent = false }, opts or {})
+---@class SetupOptions
+---@field palette? "auto" | "github_dark" | "github_light" | "merino_dark"
+
+---@param user_conf SetupOptions?
+function M.setup(user_conf)
+	local opts = vim.tbl_deep_extend("force", { palette = "auto" }, user_conf or {})
 
 	vim.cmd("highlight clear")
 	if vim.fn.exists("syntax_on") == 1 then
@@ -93,12 +92,6 @@ function M.setup(opts)
 	end
 	local palette = require("moksha.palettes." .. palette_name)
 	local highlights = require("moksha.groups.all").get_highlight(palette)
-
-	if opts.transparent then
-		for _, hl in pairs(highlights) do
-			hl.bg = nil
-		end
-	end
 
 	for group, hl in pairs(highlights) do
 		vim.api.nvim_set_hl(0, group, hl)
@@ -126,7 +119,7 @@ M.extract = function()
 		end
 	end
 
-	local file = io.open("/Users/abelfubu/dev/moksha.nvim/lua/moksha/groups/all-light.lua", "w")
+	local file = io.open("/Users/abelfubu/dev/moksha.nvim/lua/moksha/groups/another_one.lua", "w")
 
 	if not file then
 		print("Failed to open file")
