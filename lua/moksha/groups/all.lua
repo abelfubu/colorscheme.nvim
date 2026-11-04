@@ -711,6 +711,7 @@ M.get_highlight = function(palette)
 		BufferLineBackground = {
 			default = true,
 			fg = palette.fg_muted,
+			bg = palette.bg_subtle,
 		},
 		BufferLineBuffer = {
 			default = true,
@@ -731,6 +732,7 @@ M.get_highlight = function(palette)
 		BufferLineCloseButton = {
 			default = true,
 			fg = palette.fg_muted,
+			bg = palette.bg_subtle,
 		},
 		BufferLineCloseButtonSelected = {
 			default = true,
@@ -807,6 +809,7 @@ M.get_highlight = function(palette)
 		BufferLineFill = {
 			default = true,
 			fg = palette.fg_muted,
+			bg = palette.bg_subtle,
 		},
 		BufferLineGroupLabel = {
 			bg = palette.fg_muted,
@@ -854,7 +857,7 @@ M.get_highlight = function(palette)
 		},
 		BufferLineIndicatorSelected = {
 			default = true,
-			fg = palette.fg_disabled,
+			fg = palette.orange,
 		},
 		BufferLineIndicatorVisible = {
 			default = true,
@@ -894,10 +897,22 @@ M.get_highlight = function(palette)
 		BufferLineInfoVisible = {
 			default = true,
 			fg = palette.fg_muted,
+			bg = palette.bg_subtle,
+		},
+		BufferLineMiniIconsPurple = {
+			default = true,
+			fg = palette.yellow,
+			bg = palette.bg_subtle,
+		},
+		BufferLineMiniIconsYellow = {
+			default = true,
+			fg = palette.yellow,
+			bg = palette.bg_subtle,
 		},
 		BufferLineMiniIconsAzure = {
 			default = true,
 			fg = palette.blue_light,
+			bg = palette.bg_subtle,
 		},
 		BufferLineMiniIconsAzureInactive = {
 			default = true,
@@ -910,6 +925,7 @@ M.get_highlight = function(palette)
 		BufferLineMiniIconsGreen = {
 			default = true,
 			fg = palette.green_light,
+			bg = palette.bg_subtle,
 		},
 		BufferLineMiniIconsGreenInactive = {
 			default = true,
@@ -922,6 +938,7 @@ M.get_highlight = function(palette)
 		BufferLineModified = {
 			default = true,
 			fg = palette.blue_lighter,
+			bg = palette.bg_subtle,
 		},
 		BufferLineModifiedSelected = {
 			default = true,
@@ -934,6 +951,7 @@ M.get_highlight = function(palette)
 		BufferLineNumbers = {
 			default = true,
 			fg = palette.fg_muted,
+			bg = palette.bg_subtle,
 		},
 		BufferLineNumbersSelected = {
 			bold = true,
@@ -977,6 +995,8 @@ M.get_highlight = function(palette)
 		},
 		BufferLineSeparator = {
 			default = true,
+			bg = palette.bg_subtle,
+			fg = palette.gray_darker,
 		},
 		BufferLineSeparatorSelected = {
 			default = true,
@@ -985,19 +1005,20 @@ M.get_highlight = function(palette)
 			default = true,
 		},
 		BufferLineTab = {
-			default = true,
 			fg = palette.fg_muted,
+			bg = palette.bg_subtle,
 		},
 		BufferLineTabClose = {
-			default = true,
 			fg = palette.fg_muted,
+			bg = palette.bg_subtle,
 		},
 		BufferLineTabSelected = {
 			default = true,
 			fg = palette.fg_disabled,
 		},
 		BufferLineTabSeparator = {
-			default = true,
+			fg = palette.gray_darker,
+			bg = palette.bg_subtle,
 		},
 		BufferLineTabSeparatorSelected = {
 			default = true,
@@ -1010,6 +1031,7 @@ M.get_highlight = function(palette)
 			default = true,
 			fg = palette.fg_muted,
 			sp = palette.yellow,
+			bg = palette.bg_subtle,
 		},
 		BufferLineWarningDiagnostic = {
 			default = true,
