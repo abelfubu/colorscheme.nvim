@@ -289,11 +289,7 @@ M.get_highlight = function(palette)
 			fg = palette.green_lighter,
 		},
 		["@markup.raw"] = {
-			cterm = {
-				italic = true,
-			},
 			fg = palette.fg,
-			italic = true,
 		},
 		["@markup.strikethrough"] = {
 			cterm = {
@@ -2292,13 +2288,13 @@ M.get_highlight = function(palette)
 			link = "MarkviewPalette1Fg",
 		},
 		MarkviewCode = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 		},
 		MarkviewCodeFg = {
 			fg = palette.blue_markview12,
 		},
 		MarkviewCodeInfo = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.fg_muted,
 		},
 		MarkviewEmail = {
@@ -2405,7 +2401,7 @@ M.get_highlight = function(palette)
 			link = "@markup.link.label.markdown_inline",
 		},
 		MarkviewInlineCode = {
-			bg = palette.blue_markview15,
+			bg = palette.gray_darker,
 			fg = palette.fg,
 		},
 		MarkviewListItemMinus = {
@@ -2418,7 +2414,7 @@ M.get_highlight = function(palette)
 			link = "MarkviewPalette6Fg",
 		},
 		MarkviewPalette0 = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.fg_muted,
 		},
 		MarkviewPalette0Bg = {
@@ -2431,7 +2427,7 @@ M.get_highlight = function(palette)
 			fg = palette.fg_muted,
 		},
 		MarkviewPalette1 = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.blue_light,
 		},
 		MarkviewPalette1Bg = {
@@ -2444,11 +2440,11 @@ M.get_highlight = function(palette)
 			fg = palette.blue_light,
 		},
 		MarkviewPalette2 = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.blue_light,
 		},
 		MarkviewPalette2Bg = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 		},
 		MarkviewPalette2Fg = {
 			fg = palette.blue_light,
@@ -2457,11 +2453,11 @@ M.get_highlight = function(palette)
 			fg = palette.blue_light,
 		},
 		MarkviewPalette3 = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.blue_light,
 		},
 		MarkviewPalette3Bg = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 		},
 		MarkviewPalette3Fg = {
 			fg = palette.blue_light,
@@ -2470,11 +2466,11 @@ M.get_highlight = function(palette)
 			fg = palette.blue_light,
 		},
 		MarkviewPalette4 = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.blue_light,
 		},
 		MarkviewPalette4Bg = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 		},
 		MarkviewPalette4Fg = {
 			fg = palette.blue_light,
@@ -2483,11 +2479,11 @@ M.get_highlight = function(palette)
 			fg = palette.blue_light,
 		},
 		MarkviewPalette5 = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.blue_light,
 		},
 		MarkviewPalette5Bg = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 		},
 		MarkviewPalette5Fg = {
 			fg = palette.blue_light,
@@ -2496,7 +2492,7 @@ M.get_highlight = function(palette)
 			fg = palette.blue_light,
 		},
 		MarkviewPalette6 = {
-			bg = palette.blue_markview12,
+			bg = palette.bg_subtle,
 			fg = palette.blue_light,
 		},
 		MarkviewPalette6Bg = {
@@ -2509,11 +2505,11 @@ M.get_highlight = function(palette)
 			fg = palette.blue_light,
 		},
 		MarkviewPalette7 = {
-			bg = palette.purple_blend,
+			bg = palette.bg_subtle,
 			fg = palette.red_light,
 		},
 		MarkviewPalette7Bg = {
-			bg = palette.purple_blend,
+			bg = palette.bg_subtle,
 		},
 		MarkviewPalette7Fg = {
 			fg = palette.red_light,
