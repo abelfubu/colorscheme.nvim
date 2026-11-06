@@ -72,8 +72,54 @@ local M = {}
 ---@field yellow_deep string
 ---@field yellow_light string
 
+---@alias PaletteName
+---| "auto"
+---| "abyssal_trench"
+---| "alpine_milk"
+---| "basalt_shore"
+---| "buttercream_diner"
+---| "cathode_amber"
+---| "charcoal_atelier"
+---| "cinder_peak"
+---| "coastal_linen"
+---| "cobalt_foundry"
+---| "ember_hollow"
+---| "github_dark"
+---| "github_light"
+---| "glacier_mint"
+---| "heliotrope_haze"
+---| "ink_meridian"
+---| "ivory_gallery"
+---| "juniper_smoke"
+---| "lavender_postcard"
+---| "merino_dark"
+---| "merino_light"
+---| "midnight_tundra"
+---| "misty_forest"
+---| "moss_cathedral"
+---| "neon_arcade"
+---| "newsprint_fog"
+---| "nocturne_rose"
+---| "orchard_breeze"
+---| "oxblood_library"
+---| "peach_veranda"
+---| "petrol_lagoon"
+---| "phosphor_archive"
+---| "polar_aurora"
+---| "porcelain_morning"
+---| "roasted_umber"
+---| "saffron_nightfall"
+---| "silver_point_dark"
+---| "silver_point_light"
+---| "sonoran_dusk"
+---| "static_noir"
+---| "sunlit_parchment"
+---| "terracotta_noon"
+---| "velvet_dusk"
+---| "whitby_bay"
+
 ---@class SetupOptions
----@field palette? "auto" | "github_dark" | "github_light" | "merino_dark"
+---@field palette? PaletteName name of a palette in moksha.palettes, or "auto" to follow vim.o.background
 
 ---@param user_conf SetupOptions?
 function M.setup(user_conf)
