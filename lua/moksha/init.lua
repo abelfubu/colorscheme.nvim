@@ -115,6 +115,7 @@ local M = {}
 ---| "static_noir"
 ---| "sunlit_parchment"
 ---| "terracotta_noon"
+---| "tokyonight_night"
 ---| "velvet_dusk"
 ---| "whitby_bay"
 
