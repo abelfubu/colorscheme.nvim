@@ -2401,7 +2401,7 @@ M.get_highlight = function(palette)
 			link = "@markup.link.label.markdown_inline",
 		},
 		MarkviewInlineCode = {
-			bg = palette.gray_darker,
+			bg = palette.bg_inset,
 			fg = palette.fg,
 		},
 		MarkviewListItemMinus = {
