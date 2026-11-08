@@ -4726,11 +4726,11 @@ M.get_highlight = function(palette)
 			fg = palette.red_light,
 		},
 		StatusLine = {
-			bg = palette.bg_subtle,
+			bg = "NONE",
 			fg = palette.bg_inset,
 		},
 		StatusLineNC = {
-			bg = palette.bg_subtle,
+			bg = "NONE",
 			cterm = {
 				underline = true,
 			},
@@ -4972,7 +4972,7 @@ M.get_highlight = function(palette)
 			fg = palette.bg_subtle,
 		},
 		Visual = {
-			bg = palette.bg_subtle,
+			bg = palette.gray_darker,
 		},
 		VisualNOS = {
 			link = "Visual",
