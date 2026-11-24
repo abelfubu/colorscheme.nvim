@@ -4,6 +4,9 @@ local M = {}
 ---@return table
 M.get_highlight = function(palette)
 	return {
+		typescriptBraces = {
+			fg = palette.gray_light,
+		},
 		["@attribute"] = {
 			link = "Constant",
 		},
