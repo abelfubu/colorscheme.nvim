@@ -1502,8 +1502,7 @@ M.get_highlight = function(palette)
 			bg = palette.red_bg,
 		},
 		DiffText = {
-			bg = palette.green_border,
-			fg = palette.fg,
+			bg = palette.green_deep,
 		},
 		DiffTextAdd = {
 			link = "DiffText",
