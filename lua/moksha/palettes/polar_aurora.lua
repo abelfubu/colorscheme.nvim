@@ -17,7 +17,7 @@ return {
 	blue_dark = "#2360B9", -- fallback
 	blue_dim = "#1E4273", -- fallback
 	blue_light = "#82BCF2",
-	blue_lighter = "#A5D6FF", -- fallback
+	blue_lighter = "#82BCF2", -- fallback
 	blue_markview10 = "#333F5B", -- fallback
 	blue_markview11 = "#2B3249", -- fallback
 	blue_markview12 = "#262B3F", -- fallback
